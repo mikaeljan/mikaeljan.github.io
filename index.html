@@ -1,75 +1,249 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Profile of Michal Janek</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,800,800italic' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0"/>
+    <title>Portfolio</title>
+    <!--build:css css/main.min.css inline-->
+    <link rel="stylesheet" href="css/hint.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--endbuild-->
 </head>
 <body>
-  <div class="main-nav">
-    <ul class="nav">
-      <li class="name"><a href="index.html" title="Yep. That is my name!">Michal Janek</a> </li>
-      <li><a href="index.html" title="Come home! Dinner is ready!">Home</a></li>
-      <li><a href="contact.html" title="Interested in contacting me?">Contact</a></li>
-      <li><a href="http://www.ktomapozna.com" target="_blank" title="This will open my personal blogpage.">My blog</a></li>
-    </ul>
-  </div>
-
-  <header>
-    <img src="images/Michal.jpg" alt="Photo of the author" class="profile-image">
-    <p class="tag name">Teacher</p>
-    <p class="tag location">Web developer</p>
-    <p class="tag name">Translator</p>
-    <p class="tag location">Blogger</p>
-  </header>
-
-  <main class="flex">
-    <div class="card">
-      <h2>Goals</h2>
-      <p>I would love to continue "tweaking" various websites for various clients with various needs and for that I am honing skills such as:</p>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <p>It would be a wonderful to work in a team with more experienced people in order to learn better.</p>
-    </div>
-    <div id="background" class="card">
-      <h2>Background</h2>
-      <p>I am Michal and I am Slovak by origin. In my early 20`s I have decided to start travelling and realized that the world has much more to offer than my hometown. I started my own blogsite and thus sharing my experiences with friends with whom I am not able to be in person as often as I`d like to. I constantly found myself wanting to tweak my own blog and that thus I become interested in web-design and although I am not highly skilled I am eager to learn. My original idea was to learn coding in order to create my own website whenever and for whatever should I need it.
-        <p>I was a high school teacher and an amateur traveller. I also do translations in my spare time working with various CAT softwares.</p>
-      </div>
-
-      <div class="card">
-        <h2>Hobbies</h2>
-        <p>I do also enjoy activities outside of a "coding field". It is nice to step away from the screen from time to time :) </p>
-        <ul class="skills">
-          <li class="hobbies">Travel</li>
-          <li class="hobbies">Music</li>
-          <li class="hobbies">Dance</li>
+<div class="container">
+    <header class="header">
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="#intro" class="hint--rounded hint--bounce hint--bottom active" aria-label="Introduction">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 350 350" style="enable-background:new 0 0 350 350;" xml:space="preserve">
+                                <path class="path" d="M175,171.173c38.914,0,70.463-38.318,70.463-85.586C245.463,38.318,235.105,0,175,0s-70.465,38.318-70.465,85.587   C104.535,132.855,136.084,171.173,175,171.173z" fill="#FFFFFF"/>
+                                <path class="path" d="M41.909,301.853C41.897,298.971,41.885,301.041,41.909,301.853L41.909,301.853z" fill="#FFFFFF"/>
+                                <path class="path" d="M308.085,304.104C308.123,303.315,308.098,298.63,308.085,304.104L308.085,304.104z" fill="#FFFFFF"/>
+                                <path class="path" d="M307.935,298.397c-1.305-82.342-12.059-105.805-94.352-120.657c0,0-11.584,14.761-38.584,14.761   s-38.586-14.761-38.586-14.761c-81.395,14.69-92.803,37.805-94.303,117.982c-0.123,6.547-0.18,6.891-0.202,6.131   c0.005,1.424,0.011,4.058,0.011,8.651c0,0,19.592,39.496,133.08,39.496c113.486,0,133.08-39.496,133.08-39.496   c0-2.951,0.002-5.003,0.005-6.399C308.062,304.575,308.018,303.664,307.935,298.397z" fill="#FFFFFF"/>
+                            </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#portfolio" class="hint--rounded hint--bounce hint--bottom" aria-label="Portfolio">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+                                <path class="path" d="M384,96h-85.333V53.333c0-23.573-19.093-42.667-42.667-42.667h-85.333C147.093,10.667,128,29.76,128,53.333V96H42.667    c-23.573,0-42.453,19.093-42.453,42.667L0,373.333C0,396.907,19.093,416,42.667,416H384c23.573,0,42.667-19.093,42.667-42.667    V138.667C426.667,115.093,407.573,96,384,96z M256,96h-85.333V53.333H256V96z" fill="#FFFFFF"/>
+                            </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#about" class="hint--rounded hint--bounce hint--bottom" aria-label="About">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <path class="path" d="M136,0c-24.814,0-45,20.186-45,45c0,24.814,20.186,45,45,45c24.814,0,45-20.186,45-45C181,20.186,160.814,0,136,0z" fill="#FFFFFF"/>
+                                <path class="path" d="M391,120h90c8.291,0,15-6.709,15-15V15c0-8.291-6.709-15-15-15h-90c-8.291,0-15,6.709-15,15v30h-75    c-8.291,0-15,6.709-15,15v392c0,8.291,6.709,15,15,15h75v30c0,8.291,6.709,15,15,15h90c8.291,0,15-6.709,15-15v-90    c0-8.291-6.709-15-15-15h-90c-8.291,0-15,6.709-15,15v30h-60V271h60v30c0,8.291,6.709,15,15,15h90c8.291,0,15-6.709,15-15v-90    c0-8.291-6.709-15-15-15h-90c-8.291,0-15,6.709-15,15v30h-60V75h60v30C376,113.291,382.709,120,391,120z" fill="#FFFFFF"/>
+                                <path class="path" d="M196,120H76c-33.091,0-60,27.909-60,61v90c0,19.887,17.428,36.255,45,26.523V482c0,16.569,13.431,30,30,30    c16.569,0,30-13.431,30-30c0-39.503,0-68.57,0-106c0-8.284,6.716-15,15-15s15,6.716,15,15c0,38.643,0,66.358,0,106    c0,16.569,13.431,30,30,30c16.569,0,30-13.431,30-30V297.523c27.572,9.732,45-6.636,45-26.523v-90    C256,147.909,229.091,120,196,120z" fill="#FFFFFF"/>
+                            </svg>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact" class=" hint--rounded hint--bounce hint--bottom" aria-label="Contact">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
+                                <path class="path" d="M227.5,0C101.855,0,0,101.855,0,227.5c0,47.551,14.598,91.688,39.544,128.193L9.662,445.338l89.646-29.881  C135.812,440.403,179.949,455,227.5,455C353.145,455,455,353.145,455,227.5C455,101.855,353.145,0,227.5,0z" fill="#FFFFFF"/>
+                            </svg>
+                </a>
+            </li>
         </ul>
-      </div>
-    </main>
-    <!--
-    <div class="gallery">
-    <a href="images/mockup.jpg">
-    <img src="images/mockup.jpg" alt="working desk"></a>
-  </div>
--->
-<footer>
-  <div class = "container">
-    <ul>
-      <li><a href="https://plus.google.com/107104171536628654618" class="social google">Google+</a></li>
-      <li><a href="https://twitter.com/mikael_janek" class="social twitter">Twitter</a></li>
-      <li><a href="https://sk.linkedin.com/in/michal-janek-362889119" class="social linkedin">LinkedIn</a></li>
-      <li><a href="https://github.com/MichaJan" class="social github">Github</a></li>
-      <li><a href="https://www.facebook.com/mikael.janek" class="social facebook">Facebook</a></li>
-    </ul>
-    <p class="copyright">Copyright 2016,</p>
-    <p class="copyright">Michal Janek</p>
-  </div>
-</footer>
+    </header>
+    <div class="wrapper">
+        <div id="intro" class="intro row">
+            <!--Welcome banner-->
+            <div class="intro__image">
+                <picture class="">
+                    <source srcset="img/photos/profile_picture.jpg">
+                    <img  class="icon icon--profile" alt="photo of michal" src="img/photos/profile_picture.jpg"/>
+                </picture>
+            </div>
+            <div class="intro__description">
+                <h2 class="title intro__title">Michal Janek</h2>
+                <p class="intro__desc desc">"Junior Web Developer, who makes sure his code is neatly written.<br>Does not require coffee to run."</p>
+            </div>
+
+        </div> <!--End banner-->
+    </div>
+    <div class="wrapper">
+        <h1 class="title portfolio__title"> Project Showcase</h1>
+        <main id="portfolio" class="row">
+            <div class="project project--1">
+                <div class="project__overlay">
+                    <h3>Google Map Project</h3>
+                    <p>One page web app featuring Google Maps API, Wikipedia API to show and real-time filter various places in selected area</p>
+                    <ul class="list">
+                        <li class="list__item">JS</li>
+                        <li class="list__item">REST API</li>
+                        <li class="list__item">AJAX</li>
+                    </ul>
+                    <div class="overlay__buttons">
+                        <a href="https://mikaeljan.github.io/Neighborhood-Map-Project/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/Neighborhood-Map-Project" target="_blank" class="overlay__button">GitHub</a>
+                    </div>
+                </div>
+            </div>  <!--end project-->
+            <div class="project project--2">
+
+                <div class="project__overlay">
+                    <h3>Web App Dashboard</h3>
+                    <p>A single page app using Chart.js library to display data with various types of charts</p>
+                    <ul class="list">
+                        <li class="list__item">HTML</li>
+                        <li class="list__item">CSS</li>
+                        <li class="list__item">JS</li>
+                    </ul>
+                    <div class="overlay__buttons">
+                        <a href="https://mikaeljan.github.io/web-app-dashboard-project/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/web-app-dashboard-project" target="_blank" class="overlay__button">GitHub</a>
+                    </div>
+                </div>
+            </div>  <!--end project-->
+
+            <div class="project project--3">
+                <div class="project__overlay">
+                    <h3>Interactive Video Player</h3>
+                    <p>An interactive video player with live transcript featuring clickable text to change video progress</p>
+                    <ul class="list">
+                        <li class="list__item">HTML</li>
+                        <li class="list__item">CSS</li>
+                        <li class="list__item">JS</li>
+                    </ul>
+                    <div class="overlay__buttons">
+                        <a href="https://mikaeljan.github.io/Interactive_video_player/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/Interactive_video_player" target="_blank" class="overlay__button">GitHub </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project project--4">
+                <div class="project__overlay">
+                    <h3>Interactive Gallery</h3>
+                    <p>A photo gallery with images featuring filter and jQuery overlay</p>
+                    <ul class="list">
+                        <li class="list__item">HTML</li>
+                        <li class="list__item">CSS</li>
+                        <li class="list__item">JS</li>
+                    </ul>
+                    <div class="overlay__buttons">
+                        <a href="https://mikaeljan.github.io/InteractiveGallery/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/InteractiveGallery/" target="_blank" class="overlay__button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project project--5">
+                <div class="project__overlay">
+                    <h3>Accessibility Refactor</h3>
+                    <p>A simple music band page site refactored to meet WCAG 2.0 accessibility standards</p>
+                    <ul class="list">
+                        <li class="list__item">HTML</li>
+                        <li class="list__item">WCAG</li>
+                        <li class="list__item">JS</li>
+                        <li class="list__item">jQuery</li>
+                    </ul>
+                    <div class="overlay__buttons">
+                        <a href="https://mikaeljan.github.io/accessibility_project/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/accessibility_project" target="_blank" class="overlay__button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project project--6">
+                <div class="project__overlay">
+                    <h3>Online Table Tennis Game</h3>
+                    <p>A simple game created using HTML canvas and JS. Game accelerates slowly and tracks score. Nothing more, nothing else.</p>
+                    <ul class="list">
+                        <li class="list__item">HTML</li>
+                        <li class="list__item">JS</li>
+                    </ul>
+                    <div class="overlay__buttons">
+                        <a href="https://mikaeljan.github.io/TennisGame/" target="_blank" class="overlay__button">Demo</a>
+                        <a href="https://github.com/mikaeljan/TennisGame" target="_blank" class="overlay__button">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </main>        <!--end main-->
+    </div>
+
+    <aside >
+        <div id="carousel">
+
+            <div class="wrapper">
+                <section id="about" class="about">
+                    <h2 class="title">Little about myself</h2>
+                    <p class="desc">Now a recent Full Stack Web Developer graduate, during my endless journey to be a famous harp player and a blues star, I have spent few years sitting behind a desk in hotel services. It was there I realised how important is to have the easiest access to information and to the product itself.
+                        Eager and willing, I have decided to combine both and delve into web development field in form of countless nights selecting the courses and lectures on Web Development.
+                        Currently, I am working on simple projects related to Full Stack Web Development, where I attend to both Front-End and Back-End.
+                    </p>
+                </section>
+            </div>             <!--wrapper-->
+
+            <div class="wrapper">
+                <section id="contact" class="contact">
+                    <h2 class="title">Contact</h2>
+                    <p class="desc">To hear more about what I have been working on contact me via these links</p>
+
+                    <div class="social">
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="#" class="hint--top hint--bounce hint--rounded" aria-label="Facebook">
+                                    <svg id="facebook-square" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                        <circle fill="#FFFFFF" class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                                        <path fill="#292929" class="inner-shape" style="opacity:1;" transform="translate(25,25) scale(0.5)" d="M82.667,1H17.335C8.351,1,1,8.351,1,17.336v65.329c0,8.99,7.351,16.335,16.334,16.335h65.332 C91.652,99.001,99,91.655,99,82.665V17.337C99,8.353,91.652,1.001,82.667,1L82.667,1z M84.318,50H68.375v42.875H50V50h-8.855V35.973 H50v-9.11c0-12.378,5.339-19.739,19.894-19.739h16.772V22.3H72.967c-4.066-0.007-4.57,2.12-4.57,6.078l-0.023,7.594H86.75 l-2.431,14.027V50z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="https://twitter.com/mikael_janek" class="hint--top hint--bounce hint--rounded" aria-label="Twitter">
+                                    <svg id="twitter" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                        <circle fill="#FFFFFF"  class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1;"></circle>
+                                        <path class="inner-shape" fill="#292929" style="opacity:1;" transform="translate(25,25) scale(0.5)" d="M99.001,19.428c-3.606,1.608-7.48,2.695-11.547,3.184c4.15-2.503,7.338-6.466,8.841-11.189 c-3.885,2.318-8.187,4-12.768,4.908c-3.667-3.931-8.893-6.387-14.676-6.387c-11.104,0-20.107,9.054-20.107,20.223 c0,1.585,0.177,3.128,0.52,4.609c-16.71-0.845-31.525-8.895-41.442-21.131C6.092,16.633,5.1,20.107,5.1,23.813 c0,7.017,3.55,13.208,8.945,16.834c-3.296-0.104-6.397-1.014-9.106-2.529c-0.002,0.085-0.002,0.17-0.002,0.255 c0,9.799,6.931,17.972,16.129,19.831c-1.688,0.463-3.463,0.71-5.297,0.71c-1.296,0-2.555-0.127-3.783-0.363 c2.559,8.034,9.984,13.882,18.782,14.045c-6.881,5.424-15.551,8.657-24.971,8.657c-1.623,0-3.223-0.096-4.796-0.282 c8.898,5.738,19.467,9.087,30.82,9.087c36.982,0,57.206-30.817,57.206-57.543c0-0.877-0.02-1.748-0.059-2.617 C92.896,27.045,96.305,23.482,99.001,19.428z"></path>
+                                    </svg>
+                                </a>
+
+                            </li>
+                            <li class="list__item">
+                                <a href="https://github.com/mikaeljan" class="hint--top hint--bounce hint--rounded" aria-label="GitHub">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 35.318 35.318" style="enable-background:new 0 0 35.318 35.318;" xml:space="preserve">
+                                            <path d="M23.71,34.689c-0.172,0.062-0.345,0.137-0.522,0.168c-0.678,0.121-1.112-0.229-1.116-0.922   c-0.009-1.287-0.009-2.572,0.012-3.859c0.022-1.48-0.012-2.941-1.139-4.162c0.67-0.12,1.266-0.204,1.849-0.338   c3.862-0.887,5.868-3.323,6.124-7.366c0.131-2.058-0.236-3.946-1.604-5.567c-0.099-0.114-0.104-0.373-0.057-0.539   c0.364-1.34,0.258-2.649-0.166-3.959c-0.105-0.327-0.279-0.428-0.602-0.407c-1.134,0.063-2.173,0.461-3.089,1.073   c-0.883,0.593-1.705,0.722-2.754,0.482c-2.31-0.521-4.635-0.369-6.94,0.165c-0.261,0.062-0.612-0.021-0.851-0.161   c-1.082-0.634-2.164-1.25-3.412-1.496c-0.965-0.188-1.049-0.14-1.305,0.793C7.816,9.77,7.784,10.947,8.113,12.13   c0.047,0.172-0.002,0.448-0.117,0.575c-2.557,2.853-1.631,8.244,0.092,10.309c1.34,1.604,3.12,2.326,5.096,2.701   c0.345,0.064,0.688,0.113,1.033,0.173c-0.296,0.77-0.562,1.497-0.863,2.212c-0.059,0.138-0.246,0.254-0.399,0.312   c-1.938,0.752-3.604,0.199-4.713-1.56c-0.593-0.938-1.354-1.639-2.488-1.842c-0.036-0.007-0.073-0.026-0.106-0.021   c-0.305,0.08-0.607,0.164-0.911,0.246c0.171,0.238,0.292,0.558,0.521,0.701c0.961,0.608,1.586,1.475,1.999,2.498   c0.649,1.604,1.909,2.319,3.546,2.459c0.799,0.065,1.606,0.01,2.481,0.01c0,0.996,0.036,2.133-0.015,3.265   c-0.026,0.61-0.639,0.854-1.373,0.604c-1.947-0.666-3.752-1.621-5.311-2.963C0.956,26.96-1.214,20.83,0.657,13.655   C2.522,6.503,7.383,2.116,14.651,0.739C24.708-1.163,34.235,6.161,35.233,16.37C36.021,24.418,31.284,31.949,23.71,34.689z    M14.229,25.85c-0.006,0.014-0.01,0.024-0.016,0.038c0.018,0.003,0.036,0.006,0.055,0.009   C14.282,25.898,14.294,25.923,14.229,25.85z M9.679,29.031c0.157,0.097,0.307,0.22,0.477,0.273c0.062,0.02,0.177-0.121,0.38-0.271   c-0.282-0.107-0.448-0.201-0.623-0.225C9.845,28.8,9.757,28.953,9.679,29.031z M11.112,29.277c0.023,0.105,0.232,0.236,0.355,0.234   c0.119-0.002,0.235-0.16,0.354-0.25c-0.108-0.099-0.216-0.195-0.548-0.494C11.201,28.975,11.082,29.143,11.112,29.277z    M12.87,28.854c-0.148,0.035-0.273,0.172-0.408,0.266c0.079,0.1,0.158,0.193,0.285,0.35c0.175-0.16,0.294-0.271,0.414-0.379   C13.061,29.004,12.944,28.836,12.87,28.854z M8.512,28.261c0.082,0.155,0.209,0.289,0.381,0.508   c0.115-0.188,0.24-0.332,0.218-0.361c-0.109-0.143-0.257-0.26-0.403-0.367C8.698,28.033,8.495,28.227,8.512,28.261z" fill="#FFFFFF"/>
+                                        </svg>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="https://www.linkedin.com/in/michal-janek/" class="hint--top hint--bounce hint--rounded" aria-label="LinkedIn">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+                                            <path d="M29.35,21.298c-2.125,0-3.074,1.168-3.605,1.988v-1.704h-4.002c0.052,1.128,0,12.041,0,12.041h4.002v-6.727     c0-0.359,0.023-0.72,0.131-0.977c0.29-0.72,0.948-1.465,2.054-1.465c1.448,0,2.027,1.104,2.027,2.724v6.442h4.002h0.001v-6.905     C33.958,23.019,31.983,21.298,29.35,21.298z M25.742,23.328h-0.025c0.008-0.014,0.02-0.027,0.025-0.041V23.328z" fill="#FFFFFF"/>
+                                            <rect x="15.523" y="21.582" width="4.002" height="12.041" fill="#FFFFFF"/>
+                                            <path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M37.991,36.055c0,1.056-0.876,1.91-1.959,1.91H13.451c-1.08,0-1.957-0.854-1.957-1.91V13.211     c0-1.055,0.877-1.91,1.957-1.91h22.581c1.082,0,1.959,0.856,1.959,1.91V36.055z" fill="#FFFFFF"/>
+                                            <path d="M17.551,15.777c-1.368,0-2.264,0.898-2.264,2.08c0,1.155,0.869,2.08,2.211,2.08h0.026c1.396,0,2.265-0.925,2.265-2.08     C19.762,16.676,18.921,15.777,17.551,15.777z" fill="#FFFFFF"/>
+                                        </svg>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a class="hint--top hint--bounce hint--rounded" aria-label="Mail" href="mailto:mikael.janek@gmail.com">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 299.997 299.997" style="enable-background:new 0 0 299.997 299.997;" xml:space="preserve" width="512px" height="512px">
+                                            <path d="M149.996,0C67.157,0,0.001,67.158,0.001,149.997c0,82.837,67.156,150,149.995,150s150-67.163,150-150    C299.996,67.158,232.835,0,149.996,0z M149.999,52.686l88.763,55.35H61.236L149.999,52.686z M239.868,196.423h-0.009    c0,8.878-7.195,16.072-16.072,16.072H76.211c-8.878,0-16.072-7.195-16.072-16.072v-84.865c0-0.939,0.096-1.852,0.252-2.749    l84.808,52.883c0.104,0.065,0.215,0.109,0.322,0.169c0.112,0.062,0.226,0.122,0.34,0.179c0.599,0.309,1.216,0.558,1.847,0.721    c0.065,0.018,0.13,0.026,0.195,0.041c0.692,0.163,1.393,0.265,2.093,0.265h0.005c0.005,0,0.01,0,0.01,0    c0.7,0,1.401-0.099,2.093-0.265c0.065-0.016,0.13-0.023,0.195-0.041c0.63-0.163,1.245-0.412,1.847-0.721    c0.114-0.057,0.228-0.117,0.34-0.179c0.106-0.06,0.218-0.104,0.322-0.169l84.808-52.883c0.156,0.897,0.252,1.808,0.252,2.749    V196.423z" fill="#FFFFFF"/>
+                                        </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </aside>
+
+    <footer id="footer" class="footer"><span>&copy 2017 - Michal Janek</span><a href="#intro">Back to Top</a></footer>
+</div> <!--end container-->
+
+<!--Scripts-->
+
+<!--build:js js/main.min.js -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<!--endbuild-->
 </body>
 </html>
