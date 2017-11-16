@@ -554,7 +554,8 @@ header {
 .intro {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center; }
+  align-items: center;
+  margin-top: 20px; }
   @media (min-width: 768px) {
     .intro {
       flex-direction: row-reverse;
@@ -598,7 +599,7 @@ aside {
       align-items: stretch; } }
 
 .project--1 {
-  background-image: url("../img/projects/project-1.jpg"); }
+  background-image: url("../img/projects/project-7.jpg"); }
 .project--2 {
   background-image: url("../img/projects/project-2.jpg"); }
 .project--3 {
@@ -609,6 +610,8 @@ aside {
   background-image: url("../img/projects/project-5.jpg"); }
 .project--6 {
   background-image: url("../img/projects/project-6.jpg"); }
+.project--7 {
+  background-image: url("../img/projects/project-1.jpg"); }
 .project__overlay {
   width: 100%;
   display: flex;
