@@ -13,11 +13,11 @@ $(document).ready(function() {
         });
     });
 
-    //Carousel
-    $('#carousel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-    });
-});
+//     //Carousel
+//     $('#carousel').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 4000,
+//     });
+// });
